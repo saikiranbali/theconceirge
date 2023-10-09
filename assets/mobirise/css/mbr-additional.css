@@ -1076,6 +1076,10 @@ a {
 .cid-tO4VFIviH7 .mbr-fallback-image.disabled {
   display: none;
 }
+
+.cid-tO4VFIviH7 .mbr-section-subtitle {
+  text-align: left;
+}
 .cid-tO4VFIviH7 .mbr-fallback-image {
   display: block;
   background-size: cover;
@@ -1380,6 +1384,9 @@ a {
 }
 .cid-tO4VraIDfY .mbr-fallback-image.disabled {
   display: none;
+}
+.cid-tO4VraIDfY .card-text {
+  text-align: left;
 }
 .cid-tO4VraIDfY .mbr-fallback-image {
   display: block;
