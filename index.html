@@ -56,18 +56,31 @@
                     <li class="nav-item"><a class="nav-link link text-primary display-7" href="index.html#gallery6-1g">Portfolio</a>
                     </li><li class="nav-item"><a class="nav-link link text-primary display-7" href="index.html#contacts3-16">Contact Us</a></li></ul>
                 
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="contact.html">Get Free Consultation</a></div>
-                <button class="primary" onclick="window.dialog.showModal();">Open Dialog</button>
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4"  onclick="window.dialog.showModal();">Get Free Consultation</a></div>
+                <!-- <button class="primary" onclick="window.dialog.showModal();">Open Dialog</button> -->
             </div>
         </div>
     </nav>
 </section>
 
 <dialog id="dialog">
-	<h2>Hello.</h2>
-	<p>A CSS-only modal based on the <a href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop" target="_blank">::backdrop</a> pseudo-class. Hope you find it helpful.</p>
-	<p>You can also change the styles of the <code>::backdrop</code> from the CSS.</p>
-	<button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+    <h2>Contact Us</h2>
+<form action="https://formspree.io/f/myyqbrva" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        
+        <button type="submit" class="primary">Submit</button>
+    </form> 
+    <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
 </dialog>
 
 <section data-bs-version="5.1" class="header13 cid-tO4TxyNlTw mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=fFHy66zbktY" id="header13-1">
@@ -364,7 +377,7 @@
                             For those seeking the epitome of luxury and elegance, with access to our most exclusive and exquisite offering<br>
                         </p>
                     </div>
-                    <div class="mbr-section-btn"><a class="btn btn-primary display-4" href="contact.html#form4-e">Know More</a></div>
+                    <div class="mbr-section-btn"><a class="btn btn-primary display-4" onclick="window.dialog.showModal();">Know More</a></div>
                 </div>
             </div>
         </div>
