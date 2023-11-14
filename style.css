@@ -88,7 +88,6 @@ dialog p a:visited {
   color: rgb(var(--vs-primary));
 }
 
-
 .plan-details ul {
   list-style: none;
   padding: 0;
@@ -100,6 +99,7 @@ dialog p a:visited {
   padding: 10px;
   border-radius: 5px;
   position: relative;
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
 }
 
 .plan-details ul li::after {
@@ -111,9 +111,15 @@ dialog p a:visited {
   right: 10px; /* Adjust the right margin for the plus icon */
 }
 
-.plan-details ul li::before {
-  content: none;
+.sub-list {
+  display: none; /* Initially hide the sub-list */
 }
+
+/* Style the expandable item when it's active */
+.expandable.active::after {
+  content: "\2212"; /* Minus sign (-) when expanded */
+}
+
 
 
 

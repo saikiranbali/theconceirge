@@ -327,55 +327,70 @@
     </div>
 </section>
 
-  <section data-bs-version="5.1" class="pricing1 cid-tQdf0mCtvz mbr-parallax-background" id="pricing1-15">
+<section data-bs-version="5.1" class="pricing1 cid-tQdf0mCtvz mbr-parallax-background" id="pricing1-15">
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded">
-            <div class="card-body">
-              <h4 class="card-title mb-4 mbr-fonts-style display-2"><strong>Standard</strong></h4>
-              <p class="mbr-text mbr-fonts-style mb-5 display-7">
-                Ideal for those looking for a budget-friendly approach without compromising quality
-              </p>
-              <div class="plan-details">
-                <ul>
-                  <li>Material Brand</li>
-                  <li>Flooriing & Wall Tiles</li>
-                  <li>Door & Windows</li>
-                  <li>Water Filter</li>
-                  <li>Paints : Asian Paints</li>
-                  <li>Electricals : GM/Havels</li>
-                  <li>Warrenty : 10 Yrs</li>
-                  <li>Service : 1.5 Yrs</li>
-                </ul>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4 mbr-fonts-style display-2"><strong>Standard</strong></h4>
+                        <p class="mbr-text mbr-fonts-style mb-5 display-7">
+                            Ideal for those looking for a budget-friendly approach without compromising quality
+                        </p>
+                        <div class="plan-details">
+                            <ul>
+                                <li class="expandable" onclick="toggleList(this)">Material : Brand
+                                    <ul class="sub-list">
+                                        <li>Steel : FE 500/550 TMT Bars - Prime Gold</li>
+                                        <li>Solid Concrete : Blocks</li>
+                                        <li>Cement : ACC (Grade 53/43)</li>
+                                        <li>Concrete (M20 & M25 Grade RMC as per Structural Designer Recommendation)</li>
+                                        <li>Water Proofing : Dr. Fixit</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="expandable" onclick="toggleList(this)">Material Brand
+                                    <ul class="sub-list">
+                                        <li>Flooring & Wall Tiles</li>
+                                        <li>Door & Windows</li>
+                                        <li>Water Filter</li>
+                                        <li>Paints : Asian Paints</li>
+                                        <li>Electricals : GM/Havels</li>
+                                        <li>Warrenty : 10 Yrs</li>
+                                        <li>Service : 1.5 Yrs</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <div class="card-body">
+                    <h4 class="card-title mb-4 mbr-fonts-style display-2"><strong>Premium</strong></h4>
+                    <p class="mbr-text mbr-fonts-style mb-5 display-7">
+                      For those seeking the epitome of luxury and elegance, with access to our most exclusive and exquisite offering<br>
+                    </p>
+                    <div class="plan-details">
+                      <ul>
+                        <li>Option A</li>
+                        <li>Option B</li>
+                        <li>Option C</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mbr-section-btn"><a class="btn btn-primary display-4" onclick="window.dialog.showModal();">Know More</a></div>
+                  </div>
+                     
               </div>
-            </div>
-          </div>
+
         </div>
-  
-        <div class="col-12 col-lg-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded">
-            <div class="card-body">
-              <h4 class="card-title mb-4 mbr-fonts-style display-2"><strong>Premium</strong></h4>
-              <p class="mbr-text mbr-fonts-style mb-5 display-7">
-                For those seeking the epitome of luxury and elegance, with access to our most exclusive and exquisite offering<br>
-              </p>
-              <div class="plan-details">
-                <ul>
-                  <li>Option A</li>
-                  <li>Option B</li>
-                  <li>Option C</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mbr-section-btn"><a class="btn btn-primary display-4" onclick="window.dialog.showModal();">Know More</a></div>
-            </div>
-               
-        </div>
-      </div>
     </div>
-  </section>
+</section>
+
   
 
 
@@ -629,6 +644,14 @@
     <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/vimeoplayer/player.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
     <script type="text/javascript">
+         function toggleList(item) {
+        item.classList.toggle('active'); // Toggle the active class
+        const subList = item.querySelector('.sub-list');
+        if (subList) {
+            subList.style.display = subList.style.display === 'block' ? 'none' : 'block';
+        }
+    }
+        
         (function () {
             var options = {
                 whatsapp: "+919971426688", // WhatsApp number
